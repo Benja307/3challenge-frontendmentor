@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+$primary: hsl(300, 69%, 71%);
+$bg-color: hsl(257, 40%, 49%);
+$font-color: #fff;
+
+@mixin icons($color){
+    cursor: pointer;
+    fill: $color;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url('../images/bg-desktop.svg'), $bg-color;
+    background-size: cover;
+    height: 100vh;
+    header{
+        padding: 40px 0 0 20px;
+        img{
+            width: 200px;
+        }
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .imagen{
+            padding: 50px 0 0 20px;
+        }
+        .contenido{
+            display: grid;
+            grid-template-columns: .8fr;
+            grid-template-rows: 1.5fr 0.5fr 1fr 0.3fr;
+            justify-content: center;
+            h1{
+                width: 400px;
+                align-self: end;
+                justify-self: start;
+                color: $font-color;
+                font-size: 36px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            p{
+                color: $font-color;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                align-self: start;
+            }
+            button{
+                border: 0;
+                width: 150px;
+                height: 40px;
+                border-radius: 50px;
+                align-self: start;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                color: $bg-color;
+                transition: all 1s;
+                &:hover{
+                    background-color: $primary;
+                    cursor: pointer;
+                    color: #fff;
+                    box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.5);
+                }
+            }
+        }
+    }
+    footer{
+        text-align: center;
+        color: #000;
+        margin-top: 30px;
+        a{
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.icons{
+    place-self: end;
+    svg{
+        width: 24px;
+        margin-right: 10px;
+        &.fb:hover{
+            @include icons($primary);
+        }
+        &.tw:hover{
+            @include icons($primary);
+        }
+        &.ig:hover{
+            @include icons($primary);
+        }
+    }
+    
+}

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("../images/bg-desktop.svg"), #674baf;
+  background-size: cover;
+  height: 100vh;
+}
+
+body header {
+  padding: 40px 0 0 20px;
+}
+
+body header img {
+  width: 200px;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+body main .imagen {
+  padding: 50px 0 0 20px;
+}
+
+body main .contenido {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .8fr;
+      grid-template-columns: .8fr;
+  -ms-grid-rows: 1.5fr 0.5fr 1fr 0.3fr;
+      grid-template-rows: 1.5fr 0.5fr 1fr 0.3fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .contenido h1 {
+  width: 400px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+body main .contenido p {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+body main .contenido button {
+  border: 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #674baf;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body main .contenido button:hover {
+  background-color: #e882e8;
+  cursor: pointer;
+  color: #fff;
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+body footer {
+  text-align: center;
+  color: #000;
+  margin-top: 30px;
+}
+
+body footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icons {
+  place-self: end;
+}
+
+.icons svg {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.icons svg.fb:hover {
+  cursor: pointer;
+  fill: #e882e8;
+}
+
+.icons svg.tw:hover {
+  cursor: pointer;
+  fill: #e882e8;
+}
+
+.icons svg.ig:hover {
+  cursor: pointer;
+  fill: #e882e8;
+}
+/*# sourceMappingURL=style.css.map */
