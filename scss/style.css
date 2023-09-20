@@ -129,7 +129,7 @@ body footer a {
   fill: #e882e8;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
   body main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
