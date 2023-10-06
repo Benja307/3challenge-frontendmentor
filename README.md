@@ -67,7 +67,7 @@ Con la propiedad fill se puede modificar el color de una imagen svg que presente
 
 ## Author
 
-- LinkedIn - (https://www.linkedin.com/in/benjamin-corujo-14660824a/)
+- LinkedIn - (https://www.linkedin.com/in/benjamin-corujo-alanis)
 - Frontend Mentor - (https://www.frontendmentor.io/profile/Benja307/)
 - Instagram - (@corujobenja_30)
 
